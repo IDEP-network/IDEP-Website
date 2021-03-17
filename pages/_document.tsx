@@ -22,6 +22,12 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <script dangerouslySetInnerHTML={{ __html: scriptTxt }} />
+          <link
+            rel="preload"
+            href="../public/fonts/Inter.var.woff2"
+            as="font"
+            type="font/woff2"
+          />
         </Head>
         <body>
           <Main />
