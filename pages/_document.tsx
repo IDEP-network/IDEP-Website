@@ -1,5 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
+
+const scriptTxt = `
+    (function () {
+      const { pathname } = window.location
+      const ipfsMatch = /.*\\/Qm\\w{44}\\//.exec(pathname)
+      const base = document.createElement('base')
+
+      base.href = ipfsMatch ? ipfsMatch[0] : '/'
+      document.head.append(base)
+    })();
+`
+
+
+
 class MyDocument extends Document {
 
 
@@ -7,30 +21,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-{/* 
-        <script id="vertexShader" type="x-shader/x-vertex" dangerouslySetInnerHTML={{
-            __html:`
-            uniform float time;
-            uniform vec2 resolution;
-            void main()	{
-              gl_Position = vec4( position, 1.0 );
-            }`
-        }}/>
-       
-      
-      <script id="fragmentShader" type="x-shader/x-fragment" dangerouslySetInnerHTML={{
-          __html:`
-            uniform float time;
-            uniform vec2 resolution;
-            void main()	{
-                float x = mod(time + gl_FragCoord.x, 20.) < 10. ? 1. : 0.;
-                float y = mod(time + gl_FragCoord.y, 20.) < 10. ? 1. : 0.;
-                gl_FragColor = vec4(vec3(min(x, y)), 1.);
-            }`
-      }}/> */}
-        
-      
-
+          <script dangerouslySetInnerHTML={{ __html: scriptTxt }} />
         </Head>
         <body>
           <Main />

@@ -18,7 +18,7 @@ const Software = () => {
                                 Cosmos SDK
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
 
-                                <div className="image" style={{ backgroundImage: `url('images/software/cosmos.svg')` }} />
+                                <div className="image" style={{ backgroundImage: `url('./images/software/cosmos.svg')` }} />
                             </ a>
                         </div>
 
@@ -28,7 +28,7 @@ const Software = () => {
                                 IPFS
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
 
-                                <div className="image" style={{ backgroundImage: `url('images/software/IPFS.svg')` }} />
+                                <div className="image" style={{ backgroundImage: `url('./images/software/IPFS.svg')` }} />
                             </ a>
                         </div>
 
@@ -38,7 +38,7 @@ const Software = () => {
                                 DAOstack
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
 
-                                <div className="image" style={{ backgroundImage: `url('images/software/DAOstack.svg')` }} />
+                                <div className="image" style={{ backgroundImage: `url('./images/software/DAOstack.svg')` }} />
                             </ a>
                         </div>
 
@@ -48,7 +48,7 @@ const Software = () => {
                                 Tendermint
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
 
-                                <div className="image" style={{ backgroundImage: `url('images/software/tendermint.svg')` }} />
+                                <div className="image" style={{ backgroundImage: `url('./images/software/tendermint.svg')` }} />
                             </ a>
                         </div>
                     </div>

@@ -34,7 +34,7 @@ const Hero: FC = () => {
         bodyElement.style.overflow = 'hidden'
         const canvas = document.querySelector('.hero_canvas') as HTMLCanvasElement
         const videoTextureElement = document.querySelector('.texture_video')
-        navigator.userAgent.search("Firefox") > -1 && videoTextureElement.setAttribute('src', "/textures/videos/version3_compressed.mp4");
+        navigator.userAgent.search("Firefox") > -1 && videoTextureElement.setAttribute('src', "./textures/videos/version3_compressed.mp4");
         const scene = new Scene();
 
 
@@ -77,7 +77,7 @@ const Hero: FC = () => {
         const ring = new THREE.Mesh(new THREE.RingGeometry(1.5, 2, 80), new THREE.MeshMatcapMaterial(
             {
                 side: THREE.DoubleSide,
-                matcap: new THREE.TextureLoader().load('/textures/matcaps/white_black.png')
+                matcap: new THREE.TextureLoader().load('./textures/matcaps/white_black.png')
             }))
         ring.rotation.set(Math.PI / 2, -15, 0);
         // ring.rotation.set(Math.PI / 2, -15, 0);
@@ -188,7 +188,7 @@ const Hero: FC = () => {
             <section className="hero_container" onMouseMove={e => dissableBlurOnElement(e, '.main_header')}>
                 <div className="hero_canvas" />
 
-                <video className='texture_video' playsInline muted loop autoPlay width="320" height="240" src="/textures/videos/version3_compressed.mp4" />
+                <video className='texture_video' playsInline muted loop autoPlay width="320" height="240" src="./textures/videos/version3_compressed.mp4" />
                 {/* <video className='intro_video' muted autoPlay src="/videos/intro/hero_high_resolution.mp4" /> */}
 
 
@@ -198,7 +198,7 @@ const Hero: FC = () => {
                     <Button
                         className='hero_button'
                         onClick={() => {
-                            let buttonAudio = new Audio('/audio/buttons/dingtrim.mp3')
+                            let buttonAudio = new Audio('./audio/buttons/dingtrim.mp3')
                             buttonAudio.volume = 0.2
                             buttonAudio.play()
                         }}

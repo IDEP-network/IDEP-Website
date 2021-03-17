@@ -36,8 +36,8 @@ const Media = () => {
                     <p className="description f-size-p2 f-weight-l">Through a series of innovative apps and standards, the Intergalactic Data Exchange Protocol enables developers to create anything the mind can imagine: from a website <b> selling NFTs </b> of unicorns to a <b> trustless Intellectual property </b> framework, and everything in between. All can be built through IDEP.</p>
                     <div className="video_container">
                         <p className="video_number f-size-h3 f-weight-bl">{videoIndex}</p>
-                        <video muted autoPlay playsInline src="/videos/media/planet.mp4" />
-                        <video muted autoPlay playsInline src="/videos/media/profit.mp4" className='layer_under' />
+                        <video muted autoPlay playsInline src="./videos/media/planet.mp4" />
+                        <video muted autoPlay playsInline src="./videos/media/profit.mp4" className='layer_under' />
                     </div>
                     <div className="buttons">
                         <div className="button" data-videoindex={1} onClick={(e) => handleVideoChange(e)} >

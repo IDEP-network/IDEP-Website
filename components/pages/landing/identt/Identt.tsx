@@ -2,7 +2,7 @@ const Identt = () => {
     return (
         <>
             <section className="identt_main">
-                <video muted autoPlay playsInline loop src="videos/identt/identt.mp4" className="identt_video"></video>
+                <video muted autoPlay playsInline loop src="./videos/identt/identt.mp4" className="identt_video"></video>
                 <div className="container">
                     <div className="image" />
                     <h1 className="content f-size-h3 f-weight-bl">

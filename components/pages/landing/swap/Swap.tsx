@@ -14,7 +14,7 @@ const Swap = () => {
     const init = () => {
         scrollLottie({
             target: '#swap_canvas',
-            path: 'animations/galaxy.json',
+            path: './animations/galaxy.json',
             duration: 0.2,
             speed: 'slow'
         })
@@ -36,7 +36,7 @@ const Swap = () => {
                         {content.map((feature, i) => (
                             <div key={i} className="feature">
                                 <div className="image_container" style={{
-                                    backgroundImage: `url("images/swap_icon/${feature.imageUrl}")`,
+                                    backgroundImage: `url("./images/swap_icon/${feature.imageUrl}")`,
                                     backgroundSize: ` ${i == 1 || i == 4 ? '100%' : '55%'}`
                                 }} />
                                 <div className="content">
