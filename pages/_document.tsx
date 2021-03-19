@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <script dangerouslySetInnerHTML={{ __html: scriptTxt }} />
           <link
             rel="preload"
-            href="../public/fonts/Inter.var.woff2"
+            href="/fonts/Inter.var.woff2"
             as="font"
             type="font/woff2"
           />
