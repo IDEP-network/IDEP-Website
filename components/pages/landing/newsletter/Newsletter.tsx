@@ -1,10 +1,30 @@
 import Button from 'components/lib/button/Button';
-import { Inbox } from "react-feather";
+import { Check, Inbox } from "react-feather";
+import { useState } from 'react';
+import { sendEmail } from './newsletter.utils';
+
 
 
 
 
 const Newsletter = () => {
+    const [email, setEmail] = useState<string>('')
+    const [sentStatus, setSentStatus] = useState<boolean>(false)
+
+    const handleSendEmail = () => {
+        if (email.length > 0) {
+            sendEmail(email)
+            setEmail('')
+            setSentStatus(true)
+            setTimeout(() => {
+                setSentStatus(false)
+            }, 5000);
+        }else{
+            return
+        }
+    }
+
+
     return (
         <>
             <section className="newsletter_main">
@@ -12,18 +32,37 @@ const Newsletter = () => {
                 <div className="blob_orange" />
                 <div className="container">
                     <h1 className='f-size-h3 f-weight-bl'>subscribe to our newsletter</h1>
+
+
                     <div className="inputs">
                         <div className="input_container">
-                            <input className='input' type="email" name="email" />
+                            <input onChange={(e) => setEmail(e.target.value)} value={email} className='input' type="email" name="email" />
                         </div>
-                        <Button size={2} textColor='white' color='black' style={{marginTop: 'calc(1rem + 2vw)'}}>
-                            <Inbox
-                                style={{ marginRight: '1rem' }}
-                                strokeWidth={1.5}
-                                color={'var(--dark-grey)'} />
-                            <p className="f-size-p1 f-weight-r">subscribe</p>
+                        <Button
+                            onClick={() => handleSendEmail()}
+                            size={2}
+                            textColor='white'
+                            color={`${sentStatus ? 'dark-green' : 'black'}`}
+                            style={{ marginTop: 'calc(1rem + 2vw)' }}>
+
+                            {sentStatus ? (
+                                <Check
+                                    style={{ marginRight: '1rem' }}
+                                    strokeWidth={1.5}
+                                    color={'var(--white)'} />
+                            ) : (
+                                <Inbox
+                                    style={{ marginRight: '1rem' }}
+                                    strokeWidth={1.5}
+                                    color={'var(--dark-grey)'} />
+                            )}
+
+                            <p className="email_button_text f-size-p1 f-weight-r">
+                                {sentStatus ? 'subscribed' : 'subscribe'}
+                            </p>
                         </Button>
                     </div>
+
                 </div>
             </section>
         </>

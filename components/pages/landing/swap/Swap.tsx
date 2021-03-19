@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { scrollLottie } from "components/utils/animations/scrollLottie";
-// import Lottie from 'lottie-web';
 import { content } from './swap.content';
 
 const Swap = () => {

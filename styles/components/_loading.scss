@@ -10,10 +10,36 @@
         justify-content: center;
         align-items: center;
 
+
+
+
+
         .content {
             max-width: 60rem;
             width: 86%;
-            margin-bottom: -5vw;
+            margin-bottom: -1vw;
+
+
+            .logo {
+                background: {
+                    image: url("/images/loading/logo.png");
+                    position: center;
+                    size: contain;
+                    repeat: no-repeat;
+                }
+
+                ;
+                margin-left: 13%;
+                max-width: 44rem;
+                height: 15vw;
+                width: 20vw;
+
+                @media screen and (max-width: $medium) {
+                    margin-left: 0;
+                    height: 25vw;
+                    width: 30vw;
+                }
+            }
 
             .fact {
                 margin: 0 auto;

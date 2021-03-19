@@ -77,6 +77,7 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
             <section className="loading_main">
                 <div className="container">
                     <div className="content">
+                        <div className="logo"/>
                         <p className="fact f-size-h4 f-weight-bl">
                             {facts[~~(Math.random() * facts.length)]}
                         </p>

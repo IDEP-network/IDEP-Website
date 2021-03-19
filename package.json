@@ -9,6 +9,8 @@
     "export": "next export"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^1.6.0",
+    "axios": "^0.21.1",
     "gsap": "^3.6.0",
     "hammerjs": "^2.0.8",
     "lottie-web": "^5.7.6",
