@@ -5,18 +5,18 @@
         margin-left: 8vw;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 0 9vw;
+        gap: 0 5vw;
 
         .content {
             justify-self: center;
 
 
-            * {
+            *:not(b) {
                 margin-bottom: 5vw;
             }
 
 
-            h1{
+            h1 {
                 margin-top: calc(6vw + 1.2rem);
             }
 
@@ -42,8 +42,6 @@
             }
 
             ;
-
-
         }
     }
 }

@@ -26,7 +26,7 @@ const Swap = () => {
                     <div className="animation" id="swap_canvas" />
                 </div>
 
-                <div style={{ height: '190vh' }} />
+                <div className='swap_spacer' />
 
                 <div className="content_container">
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>

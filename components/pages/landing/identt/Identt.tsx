@@ -7,7 +7,7 @@ const Identt = () => {
                     <div className="image" />
                     <h1 className="content f-size-h3 f-weight-bl">
                         Module that creates {" "}
-                        <span>blockchain profiles.</span>
+                        <span className='gradient_text'>blockchain profiles.</span>
                     </h1>
                 </div>
                 <div className="identt_content">

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import * as THREE from "three"
 const { PerspectiveCamera, Scene, WebGLRenderer } = THREE
-import { fadeOutFadeIn, dissableBlurOnElement } from './utils/animations/hero.animations';
+import { dissableBlurOnElement } from './utils/animations/hero.animations';
 import Button from 'components/lib/button/Button';
 import { fixScrollToTop } from 'components/utils/animations/gsap.animations';
 import { FC } from 'react';
@@ -102,9 +102,7 @@ const Hero: FC = () => {
 
         // ─── EVENTS ────────────────────────────────────────────────────
         // videoIntro.addEventListener('ended', ({ currentTarget }) => {
-        fadeOutFadeIn('.intro_video', ['.hero_canvas', '.hero_title'])
-
-        let tl = gsap.timeline({
+      let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.hero_container',
                 start: 'top top',
@@ -113,7 +111,11 @@ const Hero: FC = () => {
             }
         })
 
-
+        tl.to('.scroll-down', {
+            opacity: 0,
+            display: 'none',
+            duration: .5
+        }) 
         tl.to(camera.position, {
             duration: 3,
             z: 4,
@@ -188,11 +190,19 @@ const Hero: FC = () => {
             <section className="hero_container" onMouseMove={e => dissableBlurOnElement(e, '.main_header')}>
                 <div className="hero_canvas" />
 
+
+
                 <video className='texture_video' playsInline muted loop autoPlay width="320" height="240" src="./textures/videos/version3_compressed.mp4" />
                 {/* <video className='intro_video' muted autoPlay src="/videos/intro/hero_high_resolution.mp4" /> */}
 
 
                 <div className="content">
+                    <div className="scroll-down">
+                        <div className="single-scroll-down-animation">
+                            <h4>scroll down</h4>
+                            <div className="line" />
+                        </div>
+                    </div>
                     <h1 className='f-size-h1 hero_title'>IDEP</h1>
                     <h1 className='f-size-h1 main_header'>Intergalactic <span className='colored_word'> Data </span><br /> Exchange Protocol</h1>
                     <Button

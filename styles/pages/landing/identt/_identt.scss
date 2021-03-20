@@ -26,7 +26,7 @@
             .image {
                 width: 100vw !important;
                 margin-bottom: 3vw;
-                background-size: 90% !important;
+                background-size: contain !important;
             }
 
             .content {
@@ -42,7 +42,7 @@
 
             background: {
                 image: url('/images/png/logo_mark.svg');
-                size: cover;
+                size: contain;
                 position: center;
                 repeat: no-repeat;
             }
@@ -59,7 +59,10 @@
 
             @media screen and (max-width: $medium) {
                 margin-bottom: 10vw;
-                margin-left: 7vw !important;
+                margin-left: 0 !important;
+                margin: -15% auto 0 auto !important;
+                max-width: 40rem !important;
+                width: 86% !important;
             }
 
             span {
@@ -73,10 +76,14 @@
     .identt_content {
         max-width: 40rem;
         width: 86%;
-        margin: 0 auto;
+        margin: -11vh auto 0 auto;
 
         p {
-            margin-bottom: 6vw;
+            margin-bottom: 4vw;
+        }
+
+        @media screen and (max-width: $medium) {
+            margin: 7% auto 0 auto !important;
         }
     }
 }

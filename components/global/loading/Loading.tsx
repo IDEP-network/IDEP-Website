@@ -1,24 +1,31 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { fixScrollToTop } from 'components/utils/animations/gsap.animations';
+import { fadeOutFadeIn } from '../../pages/landing/hero/utils/animations/hero.animations';
+import { facts } from './loading.content';
 const tl = gsap.timeline()
 
 
 
 
 const Loading = ({ isLoading }: { isLoading: boolean }) => {
+    const [fact, setFact] = useState('')
 
 
+
+
+    
     useEffect(() => {
+        setFact(facts[~~(Math.random() * facts.length)])
         init()
     }, [])
 
 
     useEffect(() => {
-        console.log(`need loading ${isLoading}`)
         if (!isLoading) {
             removeLoadingScreen()
-        }
+            fadeOutFadeIn('.intro_video', ['.hero_title', '.scroll-down'])
+        } 
     }, [isLoading])
 
     const init = () => {
@@ -44,7 +51,6 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
                 ease: "Bounce,easeOut",
             })
         })
-
     }
 
     const removeLoadingScreen = () => {
@@ -62,24 +68,15 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
     }
 
 
-    const facts = [
-        'non-fungible tokens are not interchangeable.',
-        'Non-fungible tokens contain identifying information recorded in their smart contracts.',
-        'Thanks to NFTs, digital artists can safely sell their works.',
-        'there’s been over 4.9 million sales worth well over $128 million to-date.',
-        'Create your own pools with customizable assets and weights.'
-    ]
-
-
 
     return (
         <>
             <section className="loading_main">
                 <div className="container">
                     <div className="content">
-                        <div className="logo"/>
+                        <div className="logo" />
                         <p className="fact f-size-h4 f-weight-bl">
-                            {facts[~~(Math.random() * facts.length)]}
+                            {fact}
                         </p>
                         <div className="sphere_container">
                             <div className="sphere"><div className="gradient purple" /></div>

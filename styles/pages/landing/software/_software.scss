@@ -21,6 +21,9 @@
             justify-content: space-between;
             margin-top: 15vh;
 
+            @media screen and (max-width: $medium) {
+                margin-top: 10vh !important;
+            }
             .card {
                 width: 20rem;
                 margin-bottom: 10vw;
@@ -63,7 +66,6 @@
 
                     a{
                         font-size: $f-size-h2;
-
                     }
 
 

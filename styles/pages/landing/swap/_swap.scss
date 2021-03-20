@@ -2,6 +2,13 @@
     margin-top: 10vw;
     margin-bottom: 40vw;
 
+    .swap_spacer{
+        height: 190vh;
+
+        @media screen and (max-width: 1300) {
+            height: 260vh;
+        }
+    }
 
     .swap_container {
         width: 100vw;
@@ -18,9 +25,9 @@
     .content_container {
         max-width: 58rem;
         width: 85%;
-        margin: 30vw auto 0 auto;
+        margin: 48vw auto 0 auto;
         position: relative;
-        z-index: 3;
+        z-index: 98;
 
 
 
