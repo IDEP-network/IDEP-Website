@@ -192,7 +192,7 @@ const Hero: FC = () => {
 
 
 
-                <video className='texture_video' playsInline muted loop autoPlay width="320" height="240" src="./textures/videos/version3_compressed.mp4" />
+                <video className='texture_video' playsInline muted loop autoPlay width="320" height="240" crossOrigin="anonymous" src="https://oxeni-sfs-mvxmccjos-robinzon100.vercel.app/idep/video/planet_texture.mp4" />
                 {/* <video className='intro_video' muted autoPlay src="/videos/intro/hero_high_resolution.mp4" /> */}
 
 
