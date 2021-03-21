@@ -3,17 +3,20 @@
     margin-bottom: 40vw;
 
     .swap_spacer{
-        height: 190vh;
+        height: 100rem;
 
-        @media screen and (max-width: 1300px) {
-            height: 260vh;
-        }
+        // @media screen and (max-width: 1300px) {
+        //     height: 200vw;
+        // }
         @media screen and (max-width: 1000px) {
-            height: 280vh;
+            height: 80rem;
         }
 
-        @media screen and (max-width: 400px) {
-            height: 320vh;
+        @media screen and (max-width: 780px) {
+            height: 100rem;
+        }
+        @media screen and (max-width: 460px) {
+            height: 110rem;
         }
     }
 
