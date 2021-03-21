@@ -13,7 +13,7 @@ const Swap = () => {
     const init = () => {
         scrollLottie({
             target: '#swap_canvas',
-            path: './animations/galaxy.json',
+            path: './animations/galaxy_v2.json',
             duration: 0.2,
             speed: 'slow'
         })
