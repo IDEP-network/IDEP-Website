@@ -30,13 +30,20 @@ const Swap = () => {
 
                 <div className="content_container">
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>
-                    <p className='main_description f-size-p2 f-weight-l'>With the fusion of traditional digital content and blockchain technology, a new need arises for <b>trustless exchange</b> of content. The Marketplace for the openweb, IDEP SWAP allows anyone to launch their own blockchain powered market easily and integrate it into virtually any application unlocking a whole new level of liquid assets.</p>
+                    <p className='main_description f-size-p2 f-weight-l'>
+                        <b>Defi for digital assets. And beyond.</b> {" "}
+                        With the fusion of traditional digital content and blockchain technology, a
+                        new need arises for trustless exchange of assets. The Marketplace for the
+                        openweb, IDEP SWAP allows anyone to launch their own blockchain powered
+                        digital asset market and easily integrate into virtually any application
+                        unlocking a whole new level of liquid assets.
+                    </p>
                     <div className="features">
                         {content.map((feature, i) => (
                             <div key={i} className="feature">
                                 <div className="image_container" style={{
                                     backgroundImage: `url("./images/swap_icon/${feature.imageUrl}")`,
-                                    backgroundSize: ` ${i == 1 || i == 4 ? '100%' : '55%'}`
+                                    backgroundSize: ` ${i == 0 || i == 3 ? '100%' : '55%'}`
                                 }} />
                                 <div className="content">
                                     <h2 className="f-size-h4 f-weight-bo feature_title">{feature.title}</h2>

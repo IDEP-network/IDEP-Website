@@ -33,7 +33,14 @@ const Media = () => {
         <>
             <div className="media_main">
                 <div className="container">
-                    <p className="description f-size-p2 f-weight-l">Through a series of innovative apps and standards, the Intergalactic Data Exchange Protocol enables developers to create anything the mind can imagine: from a website <b> selling NFTs </b> of unicorns to a <b> trustless Intellectual property </b> framework, and everything in between. All can be built through IDEP.</p>
+                    <p className="description f-size-p2 f-weight-l">
+                        Through a series of innovative apps and standards, the Intergalactic Data Exchange
+                        Protocol enables developers to create their on-chain identity and establish provenance for
+                        their work. A brand new way of describing nfts will help to seamlessly blur the line between
+                        physical and digital content. This new form of <b>blockchain ownership</b> will unlock a whole new
+                        level of control for artists and producers.
+                    </p>
+
                     <div className="video_container">
                         <p className="video_number f-size-h3 f-weight-bl">{videoIndex}</p>
                         <video muted autoPlay playsInline src="./videos/media/planet.mp4" />
@@ -41,10 +48,10 @@ const Media = () => {
                     </div>
                     <div className="buttons">
                         <div className="button" data-videoindex={1} onClick={(e) => handleVideoChange(e)} >
-                            <p className='video_title active f-size-h6 f-weight-l'>establish verifiable intellectual property rights.</p>
+                            <p className='video_title active f-size-h6 f-weight-l'>Establish verifiable intellectual property rights.</p>
                         </div>
                         <div className="button" data-videoindex={2} onClick={(e) => handleVideoChange(e)} >
-                            <p className='video_title f-size-h6 f-weight-l'>license and monetize your content trustlessly.</p>
+                            <p className='video_title f-size-h6 f-weight-l'>License and monetize your content trustlessly.</p>
                         </div>
                     </div>
                 </div>
