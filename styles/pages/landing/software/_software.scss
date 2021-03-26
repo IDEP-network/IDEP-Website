@@ -8,11 +8,14 @@
     }
 
     .container {
-        max-width: 87rem;
         width: 86%;
         margin: 0 auto;
 
 
+        h1{
+            max-width: 80rem;
+            width: 80%;
+        }
 
         .cards {
             display: flex;
@@ -26,7 +29,7 @@
             }
 
             .card {
-                width: 20rem;
+                width: 20% ;
                 margin-bottom: 10vw;
                 // width: 100%;
 
@@ -55,13 +58,13 @@
     }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
     .software_main {
         .container {
             .cards {
                 .card {
                     width: 15rem !important;
-                    margin-top: 10vh;
+                    margin-top: 5vh;
 
 
 
@@ -79,10 +82,13 @@
     .software_main {
 
         .container {
+
+            h1{
+                width: 100% !important;
+            }
             .cards {
                 .card {
                     width: 100% !important;
-                    margin-top: 10vh;
 
                     a {
                         font-size: $f-size-h2;
