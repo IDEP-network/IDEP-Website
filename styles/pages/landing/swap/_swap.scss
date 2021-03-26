@@ -43,6 +43,25 @@
             margin: 120vw auto 0 auto;
         }
 
+
+        .blob_orange {
+            position: absolute;
+            top: 10%;
+            right: 11%;
+            width: 20%;
+            height: 20%;
+            z-index: -1;
+        }
+
+        .blob_purple {
+            position: absolute;
+            top: 18%;
+            right: -8%;
+            width: 20%;
+            height: 20%;
+            z-index: -1;
+        }
+
         h1 {
             text-align: center;
             background: conic-gradient(from 133.61deg at 47.54% 48.81%, #00D1EA 0deg, #F868EC 176.25deg, #F98C2A 331.88deg, #00D1EA 360deg);

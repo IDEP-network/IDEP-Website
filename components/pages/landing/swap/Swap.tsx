@@ -13,7 +13,7 @@ const Swap = () => {
     const init = () => {
         scrollLottie({
             target: '#swap_canvas',
-            path: './animations/galaxy.json',
+            path: './animations/data.json',
             duration: 0.2,
             speed: 'slow'
         })
@@ -29,6 +29,8 @@ const Swap = () => {
                 <div className='swap_spacer' />
 
                 <div className="content_container">
+                    <div className="blob_purple" />
+                    <div className="blob_orange" />
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>
                     <p className='main_description f-size-p2 f-weight-l'>
                         <b>Defi for digital assets. And beyond.</b> {" "}

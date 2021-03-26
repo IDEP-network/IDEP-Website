@@ -12,6 +12,9 @@ const Identt = () => {
                     </h1>
                 </div>
                 <div className="identt_content">
+
+                    <div className="blob_purple" />
+                    <div className="blob_orange" />
                     <p className="description f-size-p2 f-weight-l">
                         With digital decentralization and accessibility comes digital
                         ownership of goods, media and data. An innovative new approach

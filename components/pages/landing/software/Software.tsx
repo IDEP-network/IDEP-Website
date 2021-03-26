@@ -8,6 +8,7 @@ const Software = () => {
         <>
             <div className="software_main">
                 <div className="blob_purple" />
+                <div className="blob_cyan" />
                 <div className="container">
                     <h1 className="title f-size-h1 f-weight-bl">
                         Built using a stack of powerful <b>open source</b> software

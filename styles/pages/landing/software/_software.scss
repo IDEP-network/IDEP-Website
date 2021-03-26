@@ -3,8 +3,21 @@
     position: relative;
 
 
+    .blob_cyan {
+        position: absolute;
+        top: 4%;
+        left: -8%;
+        width: 20%;
+        height: 20%;
+        z-index: -1;
+    }
     .blob_purple {
         position: absolute;
+        top: -7%;
+        left: 5%;
+        width: 20%;
+        height: 20%;
+        z-index: -1;
     }
 
     .container {

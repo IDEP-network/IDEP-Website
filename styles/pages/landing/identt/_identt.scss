@@ -77,6 +77,7 @@
         max-width: 40rem;
         width: 86%;
         margin: -11vh auto 0 auto;
+        position: relative;
 
         .description {
             margin-bottom: 4vw;
@@ -86,6 +87,26 @@
             margin: 7% auto 0 auto !important;
         }
 
+
+
+
+        .blob_orange {
+            position: absolute;
+            bottom: 55%;
+            right: -11%;
+            width: 30%;
+            height: 30%;
+            z-index: -1;
+        }
+
+        .blob_purple {
+            position: absolute;
+            bottom: 50%;
+            right: -28%;
+            width: 30%;
+            height: 30%;
+            z-index: -1;
+        }
 
         .features_container {
             margin-top: 6.5vw;
