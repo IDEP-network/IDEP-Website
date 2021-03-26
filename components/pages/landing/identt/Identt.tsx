@@ -13,16 +13,37 @@ const Identt = () => {
                 </div>
                 <div className="identt_content">
                     <p className="f-size-p4 f-weight-l">
-                        With digital decentralization and accessibility comes digital ownership of
-                        goods, media, and data. An innovative new approach to claiming these goods
-                        was created in the form of blockchain based profiles.</p>
-                    <p className="f-size-p4 f-weight-l">
-                        IDENTT allows an individual or organization to have total control over their
-                        assets and identity. Fully integratable and extensible, IDENTT allows you to
-                        log in with your on-chain profile into any supported dapp or game to quickly
-                        start using your NFT2.0. Remembering keys and seed phrases are a thing of the
-                        past with IDENTT’s new recovery feature, allowing for multiple ways of recovering
-                        your account.</p>
+                        With digital decentralization and accessibility comes digital
+                        ownership of goods, media and data. An innovative new approach
+                        to claiming these goods was created in the form of blockchain
+                        based profiles. IDENTT allows organizations and individuals
+                        to have total control over their assets and identity.
+                    </p>
+
+
+                    <div className="features_container">
+                        <div className="feature f-size-h6 f-weight-bo">
+                            <div className="icon" />
+                            <p>Multi wallet support.</p>
+                        </div>
+                        <div className="feature f-size-h6 f-weight-bo">
+                            <div className="icon" />
+                            <p>Customizable on chain identity.</p>
+                        </div>
+                        <div className="feature f-size-h6 f-weight-bo">
+                            <div className="icon" />
+                            <p> Universal login to any supported dapp or game.</p>
+                        </div>
+                        <div className="feature f-size-h6 f-weight-bo">
+                            <div className="icon" />
+                            <p>Secure profile recovery.</p>
+                        </div>
+                        <div className="feature f-size-h6 f-weight-bo">
+                            <div className="icon" />
+                            <p>No user facing keys or seed phrases.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>

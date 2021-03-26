@@ -102,7 +102,7 @@ const Hero: FC = () => {
 
         // ─── EVENTS ────────────────────────────────────────────────────
         // videoIntro.addEventListener('ended', ({ currentTarget }) => {
-      let tl = gsap.timeline({
+        let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: '.hero_container',
                 start: 'top top',
@@ -115,7 +115,7 @@ const Hero: FC = () => {
             opacity: 0,
             display: 'none',
             duration: .5
-        }) 
+        })
         tl.to(camera.position, {
             duration: 3,
             z: 4,
@@ -230,7 +230,11 @@ const Hero: FC = () => {
 
                 <div className="description_box">
                     <div className="image" />
-                    <p className="description f-size-p2 f-weight-l">IDEP is revolutionizing decentralized digital media by creating new standards and tools to enable a blockchain-based digital content economy.</p>
+                    <p className="description f-size-p2 f-weight-l">
+                        IDEP is revolutionizing decentralized digital media by
+                        creating new standards and tools to enable a
+                        blockchain-based digital content economy.
+                    </p>
                 </div>
 
             </section>

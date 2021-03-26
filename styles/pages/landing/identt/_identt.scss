@@ -78,12 +78,83 @@
         width: 86%;
         margin: -11vh auto 0 auto;
 
-        p {
+        .description {
             margin-bottom: 4vw;
         }
 
         @media screen and (max-width: $medium) {
             margin: 7% auto 0 auto !important;
+        }
+
+
+        .features_container {
+            margin-top: 6.5vw;
+        }
+
+        .feature {
+            display: grid;
+            grid-template-columns: 10% 90%;
+            align-items: center;
+            margin-bottom: 2vw;
+
+            @media screen and (max-width: $medium) {
+                margin-bottom: 7vw;
+
+                .icon {
+                    width: 2rem !important;
+                    height: 2rem !important;
+                }
+            }
+
+            p {
+                margin-left: 1rem;
+            }
+
+            .icon {
+                width: 3rem;
+                height: 3rem;
+
+
+                background: {
+                    size: contain;
+                    repeat: no-repeat;
+                    position: center;
+                    image: url('/svg/iddent/icon.svg')
+                }
+
+                ;
+
+            }
+        }
+
+        .feature:nth-child(1) {
+            .icon {
+                transform: rotate(-90deg);
+            }
+        }
+
+        .feature:nth-child(2) {
+            .icon {
+                transform: rotate(-60deg);
+            }
+        }
+
+        .feature:nth-child(3) {
+            .icon {
+                transform: rotate(-30deg);
+            }
+        }
+
+        .feature:nth-child(4) {
+            .icon {
+                transform: rotate(-15deg);
+            }
+        }
+
+        .feature:nth-child(5) {
+            .icon {
+                transform: rotate(0deg);
+            }
         }
     }
 }

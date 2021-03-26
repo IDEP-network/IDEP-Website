@@ -24,7 +24,7 @@
             }
 
             .features_container {
-                max-width: 32rem;
+                max-width: 36rem;
                 width: 100%;
 
                 @media screen and (max-width: $medium) {
@@ -78,6 +78,11 @@
                     }
                 }
 
+                .feature:nth-child(4) {
+                    .icon {
+                        background-image: url('/images/uptake/icons/four.png');
+                    }
+                }
             }
         }
 

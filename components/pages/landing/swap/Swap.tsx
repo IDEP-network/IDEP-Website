@@ -32,11 +32,7 @@ const Swap = () => {
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>
                     <p className='main_description f-size-p2 f-weight-l'>
                         <b>Defi for digital assets. And beyond.</b> {" "}
-                        With the fusion of traditional digital content and blockchain technology, a
-                        new need arises for trustless exchange of assets. The Marketplace for the
-                        openweb, IDEP SWAP allows anyone to launch their own blockchain powered
-                        digital asset market and easily integrate into virtually any application
-                        unlocking a whole new level of liquid assets.
+                        With the fusion of traditional digital content and blockchain technology, a new need arises for trustless exchange of assets. IDEP SWAP allows anyone to launch their own decentralized marketplace with a click of a button. Integrate easily into any application and create your own branded swap, all easily powered by IDEP.
                     </p>
                     <div className="features">
                         {content.map((feature, i) => (
