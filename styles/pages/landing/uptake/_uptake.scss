@@ -11,13 +11,10 @@
             justify-self: center;
 
 
-            *:not(b) {
-                margin-bottom: 5vw;
-            }
-
-
             h1 {
+                line-height: 120%;
                 margin-top: calc(6vw + 1.2rem);
+                margin-bottom: 3.5vw;
             }
 
             .description {
@@ -25,10 +22,67 @@
                 padding-bottom: 5vw;
                 border-bottom: 2px solid rgba(128, 128, 128, 0.165);
             }
+
+            .features_container {
+                max-width: 32rem;
+                width: 100%;
+
+                @media screen and (max-width: $medium) {
+                    margin-top: 7.5vw;
+                }
+
+
+                .feature {
+                    display: grid;
+                    grid-template-columns: 10% 90%;
+                    align-items: center;
+                    margin-bottom: 3.5vw;
+
+                    @media screen and (max-width: $medium) {
+                        margin-bottom: 8.5vw;
+                    }
+
+                    p {
+                        margin-left: 2rem;
+                    }
+
+                    .icon {
+                        width: 3rem;
+                        height: 3rem;
+
+                        background: {
+                            size: contain;
+                            repeat: no-repeat;
+                            position: center;
+                        }
+
+                        ;
+                    }
+                }
+
+                .feature:nth-child(1) {
+                    .icon {
+                        background-image: url('/images/uptake/icons/one.png');
+                    }
+                }
+
+                .feature:nth-child(2) {
+                    .icon {
+                        background-image: url('/images/uptake/icons/three.png');
+                    }
+                }
+
+                .feature:nth-child(3) {
+                    .icon {
+                        background-image: url('/images/uptake/icons/two.png');
+                    }
+                }
+
+            }
         }
 
         .image {
-            height: 90%;
+            height: 100%;
             width: 50vw;
             border-radius: 999px 999px 0 0;
 
@@ -63,14 +117,19 @@
                 height: 70vw !important;
             }
 
+            h1 {
+                margin-bottom: 8.5vw !important;
+            }
+
+            .description {
+                padding-bottom: 8vw !important;
+            }
+
 
             .content {
                 margin: 0 auto;
                 width: 86%;
 
-
-
-                .description {}
             }
         }
     }

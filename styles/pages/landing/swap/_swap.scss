@@ -2,12 +2,9 @@
     margin-top: 10vw;
     margin-bottom: 40vw;
 
-    .swap_spacer{
+    .swap_spacer {
         height: 100rem;
 
-        // @media screen and (max-width: 1300px) {
-        //     height: 200vw;
-        // }
         @media screen and (max-width: 1000px) {
             height: 80rem;
         }
@@ -15,6 +12,7 @@
         @media screen and (max-width: 780px) {
             height: 100rem;
         }
+
         @media screen and (max-width: 460px) {
             height: 110rem;
         }

@@ -3,15 +3,15 @@
     position: relative;
 
 
-    .blob_purple{
-       position: absolute; 
+    .blob_purple {
+        position: absolute;
     }
 
     .container {
         max-width: 87rem;
         width: 86%;
         margin: 0 auto;
-        
+
 
 
         .cards {
@@ -24,6 +24,7 @@
             @media screen and (max-width: $medium) {
                 margin-top: 10vh !important;
             }
+
             .card {
                 width: 20rem;
                 margin-bottom: 10vw;
@@ -32,7 +33,7 @@
                 a {
                     color: inherit;
 
-                    svg{
+                    svg {
                         margin-left: .7rem;
                     }
                 }
@@ -54,6 +55,25 @@
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .software_main {
+        .container {
+            .cards {
+                .card {
+                    width: 15rem !important;
+                    margin-top: 10vh;
+
+
+
+                    .image {
+                        height: 42vh;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 @media screen and (max-width: 740px) {
     .software_main {
@@ -64,7 +84,7 @@
                     width: 100% !important;
                     margin-top: 10vh;
 
-                    a{
+                    a {
                         font-size: $f-size-h2;
                     }
 
