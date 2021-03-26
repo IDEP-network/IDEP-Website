@@ -12,7 +12,7 @@ const Identt = () => {
                     </h1>
                 </div>
                 <div className="identt_content">
-                    <p className="description f-size-p4 f-weight-l">
+                    <p className="description f-size-p3 f-weight-l">
                         With digital decentralization and accessibility comes digital
                         ownership of goods, media and data. An innovative new approach
                         to claiming these goods was created in the form of blockchain
