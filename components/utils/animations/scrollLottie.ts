@@ -13,7 +13,7 @@ interface scrollLottieType {
 export const scrollLottie = (obj: scrollLottieType) => {
     let anim = Lottie.loadAnimation({
         container: document.querySelector(obj.target),
-        renderer: 'canvas',
+        renderer: 'svg',
         loop: false,
         autoplay: false,
         path: obj.path,

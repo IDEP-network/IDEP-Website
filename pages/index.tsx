@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger)
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
@@ -23,21 +23,21 @@ const Swap = dynamic(() => import('components/pages/landing/swap/Swap'), { ssr: 
 
 
 const Index = () => {
-  useEffect(() => {
-    init()
-  }, [])
+  // useEffect(() => {
+  //   init()
+  // }, [])
 
 
-  const init = () => {
-    gsap.to('#paralaxImage', {
-      scrollTrigger: {
-        trigger: "#paralaxImage",
-        start: 'top bottom',
-        scrub: .3,
-      },
-      backgroundPositionY: 100,
-    })
-  }
+  // const init = () => {
+  //   gsap.to('#paralaxImage', {
+  //     scrollTrigger: {
+  //       trigger: "#paralaxImage",
+  //       start: 'top bottom',
+  //       scrub: .3,
+  //     },
+  //     backgroundPositionY: 100,
+  //   })
+  // }
 
 
 
@@ -52,7 +52,7 @@ const Index = () => {
         <Media />
         <Identt />
         <Uptake />
-        <div style={{ height: '50vh' }} />
+        <div style={{ height: '20vh' }} />
         <Swap />
         <Software />
         <Newsletter />
