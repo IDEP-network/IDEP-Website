@@ -29,7 +29,7 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
     }, [isLoading])
 
     const init = () => {
-        fixScrollToTop(7)
+        fixScrollToTop(8)
         tl.fromTo(".loading_main .fact", {
             yPercent: 100,
             clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)',
@@ -47,7 +47,7 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
             }, {
                 yPercent: 0,
                 opacity: 1,
-                delay: i * .15,
+                delay: i * .25,
                 ease: "Bounce,easeOut",
             })
         })
