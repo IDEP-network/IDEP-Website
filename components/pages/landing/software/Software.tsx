@@ -18,8 +18,9 @@ const Software = () => {
                             <a target='_blank' href='https://cosmos.network/' className='f-size-h5 f-weight-bo'>
                                 Cosmos SDK
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
-
-                                <div className="image" style={{ backgroundImage: `url('./images/software/cosmos.svg')` }} />
+                                <div 
+                                    className="image" 
+                                    style={{ backgroundImage: `url('./images/software/cosmos.svg')` }} />
                             </ a>
                         </div>
 
@@ -28,8 +29,9 @@ const Software = () => {
                             <a target='_blank' href='https://ipfs.io/' className='f-size-h5 f-weight-bo'>
                                 IPFS
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
-
-                                <div className="image" style={{ backgroundImage: `url('./images/software/IPFS.svg')` }} />
+                                <div 
+                                    className="image" 
+                                    style={{ backgroundImage: `url('./images/software/IPFS.svg')` }} />
                             </ a>
                         </div>
 
@@ -38,8 +40,9 @@ const Software = () => {
                             <a target='_blank' href='https://daostack.io/' className='f-size-h5 f-weight-bo'>
                                 DAOstack
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
-
-                                <div className="image" style={{ backgroundImage: `url('./images/software/DAOstack.svg')` }} />
+                                <div 
+                                    className="image" 
+                                    style={{ backgroundImage: `url('./images/software/DAOstack.svg')` }} />
                             </ a>
                         </div>
 
@@ -48,8 +51,9 @@ const Software = () => {
                             <a target='_blank' href='https://tendermint.com/' className='f-size-h5 f-weight-bo'>
                                 Tendermint
                                 <ExternalLink size={20} color={'var(--dark-grey)'} />
-
-                                <div className="image" style={{ backgroundImage: `url('./images/software/tendermint.svg')` }} />
+                                <div 
+                                    className="image" 
+                                    style={{ backgroundImage: `url('./images/software/tendermint.svg')` }} />
                             </ a>
                         </div>
                     </div>

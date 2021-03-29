@@ -54,9 +54,13 @@
                             size: contain;
                             repeat: no-repeat;
                             position: center;
-                        }
+                        };
 
-                        ;
+                        @media screen and (max-width: $medium) {
+                            width: 2.3rem;
+                            height: 2.3rem;
+                        }
+        
                     }
                 }
 
