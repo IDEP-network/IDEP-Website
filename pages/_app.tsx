@@ -28,7 +28,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <HeadAndMeta />
-      <Loading isLoading={isLoading} />
+      {isLoading && (
+        <Loading isLoading={isLoading} />
+      )}
       <Component {...pageProps} />
       <style jsx global> {`
       @font-face {
