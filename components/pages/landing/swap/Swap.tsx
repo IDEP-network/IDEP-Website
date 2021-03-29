@@ -13,7 +13,7 @@ const Swap = () => {
     const init = () => {
         scrollLottie({
             target: '#swap_canvas',
-            path: './animations/data2.json',
+            path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
             duration: 0.2,
             speed: 'slow'
         })
