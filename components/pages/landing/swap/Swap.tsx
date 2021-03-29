@@ -1,22 +1,33 @@
-import { useEffect } from 'react';
-import { scrollLottie } from "components/utils/animations/scrollLottie";
+import { useEffect, useState } from 'react';
+import { scrollLottie, staticScrollLottie } from "components/utils/animations/scrollLottie";
 import { content } from './swap.content';
 
 const Swap = () => {
+    const [isMobile, setIsMobile] = useState(false)
 
 
     useEffect(() => {
+        setIsMobile(window.innerWidth < 1000)
         init()
     }, [])
 
 
     const init = () => {
-        scrollLottie({
-            target: '#swap_canvas',
-            path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
-            duration: 0.2,
-            speed: 'slow'
-        })
+        window.innerWidth < 1000 ?
+            staticScrollLottie({
+                target: '#swap_canvas',
+                path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
+                duration: 0.2,
+                speed: 'slow'
+            })
+            :
+            scrollLottie({
+                target: '#swap_canvas',
+                path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
+                duration: 0.2,
+                speed: 'slow'
+            })
+
     }
 
     return (
@@ -26,9 +37,10 @@ const Swap = () => {
                     <div className="animation" id="swap_canvas" />
                 </div>
 
-                <div className='swap_spacer' />
+                {!isMobile && <div className='swap_spacer' />}
 
-                <div className="content_container">
+
+                <div className="content_container" style={{ margin: `${isMobile && "20vh auto 0 auto"}` }}>
                     <div className="blob_purple" />
                     <div className="blob_orange" />
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>

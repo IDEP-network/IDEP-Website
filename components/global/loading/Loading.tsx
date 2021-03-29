@@ -76,7 +76,8 @@ const Loading = ({ isLoading }: { isLoading: boolean }) => {
                     <div className="content">
                         <div className="logo" />
                         <p className="fact f-size-h4 f-weight-bl">
-                            {fact}
+                            {fact} {"  "}
+                            <span style={{color: 'var(--lighter-dark)'}} className='f-size-p2 f-weight-l'>(loading ....)</span>
                         </p>
                         <div className="sphere_container">
                             <div className="sphere"><div className="gradient purple" /></div>
