@@ -18,6 +18,19 @@
         }
     }
 
+    .swap_container__mobile{
+        height: 60vh !important;
+        
+        #swap_canvas{
+            background: {
+                size: cover;
+                repeat: no-repeat;
+                position: center;
+                image: url('/images/swap/white_galaxy.png')
+            };
+        }
+    }
+
     .swap_container {
         width: 100vw;
         height: 100vh;

@@ -14,12 +14,14 @@ const Swap = () => {
 
     const init = () => {
         window.innerWidth < 1000 ?
-            staticScrollLottie({
-                target: '#swap_canvas',
-                path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
-                duration: 0.2,
-                speed: 'slow'
-            })
+            // staticScrollLottie({
+            //     target: '#swap_canvas',
+            //     path: 'https://oxeni-sfs.vercel.app/idep/animation/data2.json',
+            //     duration: 0.2,
+            //     speed: 'slow'
+            // })
+            console.log('idep 🌌')
+
             :
             scrollLottie({
                 target: '#swap_canvas',
@@ -27,20 +29,19 @@ const Swap = () => {
                 duration: 0.2,
                 speed: 'slow'
             })
-
     }
 
     return (
         <>
             <div className="swap_main">
-                <div className="swap_container">
+                <div className={`swap_container ${isMobile && "swap_container__mobile"}`}>
                     <div className="animation" id="swap_canvas" />
                 </div>
 
                 {!isMobile && <div className='swap_spacer' />}
 
 
-                <div className="content_container" style={{ margin: `${isMobile && "20vh auto 0 auto"}` }}>
+                <div className="content_container" style={{ margin: `${isMobile && "17vh auto 0 auto"}` }}>
                     <div className="blob_purple" />
                     <div className="blob_orange" />
                     <h1 className="f-size-h1 f-weight-bl">IDEP SWAP</h1>
