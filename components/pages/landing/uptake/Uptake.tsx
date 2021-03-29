@@ -6,7 +6,7 @@ const Uptake = () => {
                     <div className="content">
                         <h1 className="f-size-h2 f-weight-bl">UPTAKE <b>NFT 2.0 made effortlessly.</b></h1>
                         <p className="description f-size-p2 f-weight-l">
-                        The next-generation NFT 2.0 creation platform with superpowers. UPTAKE allows creators to forge a whole new generation of NFTs. With a simple click both fungible tokens and NFTs 2.0 can be minted and hybridized into all new and unique asset classes. 
+                        The next-generation NFT v2.0 creation platform with superpowers. UPTAKE allows creators to forge a whole new generation of NFTs. With a simple click both fungible tokens and NFTs 2.0 can be minted and hybridized into all unique asset classes. 
                         </p>
                         <div className="features_container">
                             <div className="feature f-size-h6 f-weight-bo">
@@ -19,7 +19,7 @@ const Uptake = () => {
                             </div>
                             <div className="feature f-size-h6 f-weight-bo">
                                 <div className="icon" />
-                                <p>New ways of defining NFT 2.0 assets</p>
+                                <p>New ways of defining NFT v2.0 assets</p>
                             </div>
                             <div className="feature f-size-h6 f-weight-bo">
                                 <div className="icon" />

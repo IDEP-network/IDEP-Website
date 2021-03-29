@@ -17,8 +17,8 @@ const Identt = () => {
                     <div className="blob_orange" />
                     <p className="description f-size-p2 f-weight-l">
                         With digital decentralization and accessibility comes digital
-                        ownership of goods, media and data. An innovative new approach
-                        to claiming these goods was created in the form of blockchain
+                        ownership of goods, media and data. An innovative approach
+                        to claiming these goods has been created in the form of blockchain
                         based profiles. IDENTT allows organizations and individuals
                         to have total control over their assets and identity.
                     </p>
@@ -43,7 +43,7 @@ const Identt = () => {
                         </div>
                         <div className="feature f-size-h6 f-weight-bo">
                             <div className="icon" />
-                            <p>No user facing keys or seed phrases.</p>
+                            <p>No user-facing keys or seed phrases.</p>
                         </div>
                     </div>
 

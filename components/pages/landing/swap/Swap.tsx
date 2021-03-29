@@ -48,7 +48,7 @@ const Swap = () => {
                     <p className='main_description f-size-p2 f-weight-l'>
                         <b>Defi for digital assets. And beyond.</b> {" "}
                         With the fusion of traditional digital content and blockchain
-                        technology, a new need arises for trustless exchange of assets.
+                        technology, the need has arisen for trustless exchange of assets.
                         IDEP SWAP allows anyone to launch their own decentralized marketplace
                         with a click of a button. Integrate easily into any application and
                         create your own branded swap, all fully powered by IDEP.

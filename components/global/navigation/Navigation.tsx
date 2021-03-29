@@ -44,7 +44,7 @@ const Navigation = () => {
                             </Link>
                         </div>
                         <div className="link">
-                            <Link href='/contact' >
+                            <Link href='mailto:hello@idep.network' >
                                 <div className="link_container" data-icon='contact'>
                                     <MessageSquare
                                         className='message_icon'

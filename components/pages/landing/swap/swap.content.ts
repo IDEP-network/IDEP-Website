@@ -17,7 +17,7 @@ export const content: { imageUrl: string, title: string, description: string }[]
    {
       imageUrl: 'inter.png',
       title: 'Interoperable',
-      description: 'Full interaction with other cosmos blockchains through IBC.'
+      description: 'Full interaction with other Cosmos blockchains through IBC.'
    },
    // {
    //    imageUrl: 'decent.png',
