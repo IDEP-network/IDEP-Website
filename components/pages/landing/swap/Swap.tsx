@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { scrollLottie, staticScrollLottie } from "components/utils/animations/scrollLottie";
+import { scrollLottie } from "components/utils/animations/scrollLottie";
 import { content } from './swap.content';
 
 const Swap = () => {
