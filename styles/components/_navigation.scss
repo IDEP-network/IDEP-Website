@@ -107,6 +107,7 @@
 @media screen and (max-width: $medium){
     .navigation{
         .link_container{
+            margin-left: 0 !important;
             svg{
                 display: none;
             }
