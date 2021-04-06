@@ -17,6 +17,11 @@
         fill: url('#ro_gradient');
         stroke: none;
     }
+    
+    .link_container:hover .venture_icon path {
+        fill: url('#gb_gradient');
+        stroke: none;
+    }
 }
 
 
@@ -94,5 +99,17 @@
     .link a {
         color: var(--black);
         margin-left: .7vw;
+    }
+}
+
+
+
+@media screen and (max-width: $medium){
+    .navigation{
+        .link_container{
+            svg{
+                display: none;
+            }
+        }
     }
 }

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/dist/client/router';
 import Link from 'next/link'
-import { File, MessageSquare } from "react-feather";
+import { File, Flag, MessageSquare } from "react-feather";
 
 
 
@@ -57,6 +57,20 @@ const Navigation = () => {
                                 </div>
                             </Link>
                         </div>
+                        <div className="link">
+                            <Link href='mailto:ventures@idep.network' >
+                                <div className="link_container" data-icon='contact'>
+                                    <Flag
+                                        className='venture_icon'
+                                        style={{ transform: 'translateY(8%)' }}
+                                        strokeWidth={2.2}
+                                        size={25.4}
+                                        color={'var(--black)'}
+                                    />
+                                    <a className='f-size-p3 f-weight-m'>ventures.</a>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -85,6 +99,17 @@ const Navigation = () => {
                 <linearGradient id="ro_gradient" x2="1" y2="1">
                     <stop offset="9%" stopColor="var(--red)" />
                     <stop offset="80%" stopColor="var(--orange)" />
+                </linearGradient>
+            </svg>
+            
+            <svg style={{
+                width: 0,
+                height: 0,
+                position: 'absolute'
+            }} aria-hidden="true" focusable="false">
+                <linearGradient id="gb_gradient" x2="1" y2="1">
+                    <stop offset="9%" stopColor="var(--cyan)" />
+                    <stop offset="80%" stopColor="var(--green)" />
                 </linearGradient>
             </svg>
 
