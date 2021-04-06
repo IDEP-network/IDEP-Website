@@ -1,6 +1,6 @@
 .navigation {
     background: linear-gradient(white 30%, rgba(255, 255, 255, 0));
-    
+
 
 
     .link_container:hover .paper_icon path {
@@ -17,7 +17,7 @@
         fill: url('#ro_gradient');
         stroke: none;
     }
-    
+
     .link_container:hover .venture_icon path {
         fill: url('#gb_gradient');
         stroke: none;
@@ -104,11 +104,20 @@
 
 
 
-@media screen and (max-width: $medium){
-    .navigation{
-        .link_container{
-            margin-left: 0 !important;
-            svg{
+@media screen and (max-width: $medium) {
+    .navigation {
+        .links_container {
+            .link {
+                margin-right: 0 !important;
+
+            }
+        }
+
+        .link_container {
+
+
+
+            svg {
                 display: none;
             }
         }
