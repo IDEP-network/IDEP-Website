@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // window.addEventListener("load", function () {
     setTimeout(() => {
-      console.log('should load')
       setIsLoading(false)
     }, 8000);
     // });

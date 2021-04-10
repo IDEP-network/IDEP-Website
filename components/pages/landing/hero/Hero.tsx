@@ -17,7 +17,6 @@ gsap.registerPlugin(ScrollTrigger)
 const Hero: FC = () => {
 
     useEffect(() => {
-        console.log(navigator.userAgent.search('Firefox') > -1)
         init();
     }, [])
 

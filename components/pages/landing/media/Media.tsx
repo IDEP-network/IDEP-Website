@@ -37,7 +37,7 @@ const Media = () => {
                         <h1 className="f-size-h3 f-weight-bl" style={{marginBottom: '5vh'}}>Create and Claim</h1>
                         Through a series of innovative apps and standards, the Intergalactic Data Exchange
                         Protocol enables developers to create their on-chain identity and establish provenance for
-                        their work. A brand new new way of describing nfts will help to seamlessly blur the line between
+                        their work. A brand new way of describing nfts will help to seamlessly blur the line between
                         physical and digital content. This form of <b>blockchain ownership</b> will unlock a whole new
                         level of control for artists and producers.
                     </p>
