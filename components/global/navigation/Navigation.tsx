@@ -30,7 +30,7 @@ const Navigation = () => {
 
                     <div className="links_container">
                         <div className="link">
-                            <Link href='https://docs.idep.network/'>
+                            <div onClick={()=>window.open("https://docs.idep.network/", "_blank")}>
                                 <div className="link_container" data-icon='paper'>
                                     <File
                                         className='paper_icon'
@@ -41,7 +41,7 @@ const Navigation = () => {
                                     />
                                     <a className='f-size-p3 f-weight-m'>docs.</a>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                         <div className="link">
                             <Link href='mailto:hello@idep.network' >
