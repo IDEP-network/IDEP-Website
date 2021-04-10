@@ -13,8 +13,8 @@ const Navigation = () => {
     const logoClickHandler = () => {
         if (router.pathname == '/') {
             window.innerWidth < 1300 ? window.scrollTo(0, 1200) : window.scrollTo(0, 1400)
-            
-        }else{
+
+        } else {
             router.push('/')
         }
     }
@@ -30,7 +30,7 @@ const Navigation = () => {
 
                     <div className="links_container">
                         <div className="link">
-                            <Link href='/paper' >
+                            <Link href='https://docs.idep.network/'>
                                 <div className="link_container" data-icon='paper'>
                                     <File
                                         className='paper_icon'
@@ -39,7 +39,7 @@ const Navigation = () => {
                                         size={25.4}
                                         color={'var(--black)'}
                                     />
-                                    <a className='f-size-p3 f-weight-m'>paper.</a>
+                                    <a className='f-size-p3 f-weight-m'>docs.</a>
                                 </div>
                             </Link>
                         </div>
@@ -101,7 +101,7 @@ const Navigation = () => {
                     <stop offset="80%" stopColor="var(--orange)" />
                 </linearGradient>
             </svg>
-            
+
             <svg style={{
                 width: 0,
                 height: 0,

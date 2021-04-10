@@ -220,6 +220,7 @@ const Hero: FC = () => {
                             let buttonAudio = new Audio('./audio/buttons/dingtrim.mp3')
                             buttonAudio.volume = 0.2
                             buttonAudio.play()
+                            window.open("https://docs.idep.network/", "_blank");
                         }}
                         size={6}
                         color='white'
