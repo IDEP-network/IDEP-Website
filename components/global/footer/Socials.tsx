@@ -1,10 +1,10 @@
 import { Component } from 'react'
 
 const socials = [
-    { name: 'discord', link: 'https://discord.gg/XyDZ3gbE' },
-    { name: 'telegram', link: 'https://t.me/joinchat/fWmaZrRPh_tjNzcx' },
+    { name: 'discord', link: 'https://discord.gg/Jrarctk4hG' },
+    { name: 'telegram', link: 'https://t.me/IDEPNetwork' },
     { name: 'twitter', link: 'https://twitter.com/idepnetwork' },
-    // { name: 'reddit', link:  },
+    { name: 'medium', link: 'https://medium.com/idep-network' },
 ]
 
 export default class Socials extends Component {
