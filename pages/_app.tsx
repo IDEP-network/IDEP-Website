@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import { useState, useEffect } from 'react';
+import * as gtag from 'components/lib/google analitics/gtag'
 
 //
 // ─── OWN IMPORTS ────────────────────────────────────────────────────────────────
@@ -7,6 +8,7 @@ import '../styles/main.scss'
 import HeadAndMeta from 'components/global/head/HeadAndMeta';
 import Socials from 'components/global/footer/Socials';
 import Loading from 'components/global/loading/Loading';
+import { useRouter } from 'next/dist/client/router';
 
 
 
@@ -14,6 +16,7 @@ import Loading from 'components/global/loading/Loading';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState<boolean>(true)
+  const router = useRouter();
 
 
   useEffect(() => {
@@ -24,6 +27,16 @@ function MyApp({ Component, pageProps }: AppProps) {
     // });
   }, [])
 
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
 
   return (
     <>
@@ -32,7 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Loading isLoading={isLoading} />
       )}
       <Component {...pageProps} />
-      <Socials /> 
+      <Socials />
 
       <style jsx global> {`
         @font-face {
