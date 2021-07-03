@@ -9,6 +9,7 @@ import HeadAndMeta from 'components/global/head/HeadAndMeta';
 import Socials from 'components/global/footer/Socials';
 import Loading from 'components/global/loading/Loading';
 import { useRouter } from 'next/dist/client/router';
+import AwardsBanner from '../components/global/awwwwards/AwardsBanner';
 
 
 
@@ -40,6 +41,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <AwardsBanner />
       <HeadAndMeta />
       {isLoading && (
         <Loading isLoading={isLoading} />
