@@ -1,10 +1,8 @@
 .navigation {
     background: linear-gradient(white 30%, rgba(255, 255, 255, 0));
 
-
-
     .link_container:hover .paper_icon path {
-        fill: url('#cpo_gradient');
+        fill: url("#cpo_gradient");
         stroke: none;
     }
 
@@ -12,18 +10,16 @@
         stroke: var(--bg);
     }
 
-
     .link_container:hover .message_icon path {
-        fill: url('#ro_gradient');
+        fill: url("#ro_gradient");
         stroke: none;
     }
 
     .link_container:hover .venture_icon path {
-        fill: url('#gb_gradient');
+        fill: url("#gb_gradient");
         stroke: none;
     }
 }
-
 
 .navigation {
     opacity: 0;
@@ -31,12 +27,9 @@
     z-index: 99;
     width: 100vw;
 
-
     .links_container {
         align-self: center;
     }
-
-
 
     .container {
         padding: calc(2.5vw + 1rem) 7.5vw;
@@ -46,17 +39,17 @@
         align-content: center;
     }
 
-
     .logo {
         width: 25%;
         height: calc(1.1vw + 2.8rem);
-        background-image: url('/images/png/logo.png');
+        background-image: url("/images/png/logo.png");
+        filter: drop-shadow(0px 13px 27px rgba(23, 210, 235, 0.21)) drop-shadow(0px 11px 20px rgba(248, 143, 48, 0.19))
+            drop-shadow(0px 66px 102px rgba(246, 116, 217, 0.33));
         background-size: contain;
         background-position: left center;
         background-repeat: no-repeat;
         cursor: pointer;
     }
-
 
     .links_container {
         display: inline-flex;
@@ -66,11 +59,11 @@
         height: 0%;
     }
 
-
-    .link {}
+    .link {
+    }
 
     .link_container {
-        padding: .4vw 1vw;
+        padding: 0.4vw 1vw;
         border: 1px solid #ffffff00;
         display: flex;
         justify-content: space-between;
@@ -79,44 +72,37 @@
         border: none;
         box-shadow: none;
         border-radius: 13px;
-        transition: all .2s ease;
+        transition: all 0.2s ease;
         cursor: pointer;
         user-select: none;
     }
 
     .link_container:hover {
-        background: linear-gradient(360deg, #EEEEEE 0%, rgba(255, 255, 255, 0) 60.87%), linear-gradient(180deg, #FFFFFF 1.54%, rgba(255, 255, 255, 0) 81.22%), #E3E3E3;
+        background: linear-gradient(360deg, #eeeeee 0%, rgba(255, 255, 255, 0) 60.87%),
+            linear-gradient(180deg, #ffffff 1.54%, rgba(255, 255, 255, 0) 81.22%), #e3e3e3;
         box-sizing: border-box;
         box-shadow: 0px 14px 16px -6px rgba(0, 0, 0, 0.05), inset 0px 0px 7px 4px rgba(255, 255, 255, 0.73);
     }
 
-
     .link:not(:last-child) {
-        margin-right: calc(.5vw + .5rem)
+        margin-right: calc(0.5vw + 0.5rem);
     }
-
 
     .link a {
         color: var(--black);
-        margin-left: .7vw;
+        margin-left: 0.7vw;
     }
 }
-
-
 
 @media screen and (max-width: $medium) {
     .navigation {
         .links_container {
             .link {
                 margin-right: 0 !important;
-
             }
         }
 
         .link_container {
-
-
-
             svg {
                 display: none;
             }

@@ -173,7 +173,7 @@ const Hero: FC = () => {
         scene.add(camera);
         scene.add(sphere);
         scene.add(ring)
-        renderer.setClearColor(0xffffff, 0)
+        // renderer.setClearColor(0xffffff, 0)
         canvas.appendChild(renderer.domElement);
         fixScrollToTop(1)
         animate()
